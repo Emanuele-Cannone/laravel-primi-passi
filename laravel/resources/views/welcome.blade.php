@@ -10,16 +10,13 @@
 
     <h1>gioco dei numeri</h1>
 
-    @foreach ($numeri as $numero)
+    
 
-        @if ($numero%2 == 0)
-            <p>il numero {{ $numero }} è pari</p>
-        @else
-            <p>il numero {{ $numero }} è dispari</p>
-            
-        @endif
+    @if ($numeroScelto %2 == 0)
+        <p>il numero {{ $numeroScelto }} è pari</p>
+    @endif
 
-    @endforeach    
+
 
 
 

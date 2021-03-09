@@ -26,7 +26,8 @@ Route::get('/', function () {
             8,
             9,
             10
-        ]
+        ],
+        'numeroScelto' => $_GET['numero']
     ];
     return view('welcome', $data);
 });
