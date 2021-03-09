@@ -10,13 +10,14 @@
 
     <h1>gioco dei nomi</h1>
 
-    @foreach ($ciao as $nomi)
-      
-    
-        <p>{{ $nomi }}</p>
+
+    @if (count($ciao) > 5)
+        <p>la lunghezza dell'array è maggiore di 5</p>
+    @else
+        <p>la lunghezza dell'array è minore di 5</p>
+    @endif
 
 
-    @endforeach
 
 </body>
 </html>
