@@ -10,18 +10,14 @@
 
     <h1>lista di invitati</h1>
 
-    
-
     @foreach ($invitati as $item)
-        <p>{{ $item['nome'] }}</p>
-        <p>{{ $item['cognome'] }}</p>
-        <p>{{ $item['numero'] }}</p>
+        @if (strlen($item['numero']) > 5)
+            <p>{{ $item['nome'] }}</p>
+            <p>{{ $item['cognome'] }}</p>
+            <p>{{ $item['numero'] }}</p>
+        @endif
+        
     @endforeach
-
-    
-
-
-
 
 
 </body>

@@ -19,14 +19,23 @@ Route::get('/', function () {
             [
                 'nome' => 'nome-uno',
                 'cognome' => 'cognome-uno',
-                'numero' => 'numero-uno',
+                'numero' => '12345678'
             ],
             [
                 'nome' => 'nome-due',
                 'cognome' => 'cognome-due',
-                'numero' => 'numero-due',
+                'numero' => '1234'
             ],
-
+            [
+                'nome' => 'nome-tre',
+                'cognome' => 'cognome-tre',
+                'numero' => '12345678'
+            ],
+            [
+                'nome' => 'nome-quattro',
+                'cognome' => 'cognome-quattro',
+                'numero' => '1234'
+            ],
         ]
     ];
     return view('welcome', $data);
