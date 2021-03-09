@@ -15,14 +15,16 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     $data = [
-        'emanuele',
-        'davide',
-        'giacomo',
-        'niccolo',
-        'simone',
-        'yuri',
-        'alessio',
-        'gesualdo'
+        'ciao' => [
+            'emanuele',
+            'davide',
+            'giacomo',
+            'niccolo',
+            'simone',
+            'yuri',
+            'alessio',
+            'gesualdo'
+        ]
     ];
     return view('welcome', $data);
 });

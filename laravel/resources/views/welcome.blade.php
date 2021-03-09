@@ -10,10 +10,12 @@
 
     <h1>gioco dei nomi</h1>
 
-    @foreach ($data as $nome)
+    @foreach ($ciao as $nomi)
+      
+    
+        <p>{{ $nomi }}</p>
 
-        <p> {{ $nome }} </p>
-        
+
     @endforeach
 
 </body>
