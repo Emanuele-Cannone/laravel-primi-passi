@@ -15,6 +15,9 @@
             <p>{{ $item['nome'] }}</p>
             <p>{{ $item['cognome'] }}</p>
             <p>{{ $item['numero'] }}</p>
+            
+        @else
+        <p>il numero è minore di 5 numeri</p>
         @endif
         
     @endforeach
