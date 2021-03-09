@@ -17,30 +17,29 @@ Route::get('/', function () {
     $data = [
         'invitati' => [
             [
-                'nome' => 'nome-uno',
+                'nome' => 'giacomo',
                 'cognome' => 'cognome-uno',
                 'numero' => '12345678'
             ],
             [
-                'nome' => 'nome-due',
+                'nome' => 'alfonso',
                 'cognome' => 'cognome-due',
                 'numero' => '1234'
             ],
             [
-                'nome' => 'nome-tre',
+                'nome' => 'ruggero',
                 'cognome' => 'cognome-tre',
                 'numero' => '12345678'
             ],
             [
-                'nome' => 'nome-quattro',
+                'nome' => 'achille',
                 'cognome' => 'cognome-quattro',
                 'numero' => '1234'
             ],
-        ]
+        ],
+        'message' => 'non puoi entrare',
+        'nominativo' => $_GET['name'],
+        'ciao' => 'ciao'
     ];
     return view('welcome', $data);
-});
-
-Route::get('/dadi', function(){
-    return view('dadi');
 });
