@@ -8,13 +8,7 @@
 </head>
 <body>
 
-    <h1>gioco dei nomi</h1>
 
-    @foreach ($data as $nome)
-
-        <p> {{ $nome }} </p>
-        
-    @endforeach
 
 </body>
 </html>
