@@ -8,14 +8,18 @@
 </head>
 <body>
 
-    <h1>gioco dei nomi</h1>
+    <h1>gioco dei numeri</h1>
 
+    @foreach ($numeri as $numero)
 
-    @if (count($ciao) > 5)
-        <p>la lunghezza dell'array è maggiore di 5</p>
-    @else
-        <p>la lunghezza dell'array è minore di 5</p>
-    @endif
+        @if ($numero%2 == 0)
+            <p>il numero {{ $numero }} è pari</p>
+        @else
+            <p>il numero {{ $numero }} è dispari</p>
+            
+        @endif
+
+    @endforeach    
 
 
 
