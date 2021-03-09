@@ -15,19 +15,19 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     $data = [
-        'numeri' => [
-            1,
-            2,
-            3,
-            4,
-            5,
-            6,
-            7,
-            8,
-            9,
-            10
-        ],
-        'numeroScelto' => $_GET['numero']
+        'invitati' => [
+            [
+                'nome' => 'nome-uno',
+                'cognome' => 'cognome-uno',
+                'numero' => 'numero-uno',
+            ],
+            [
+                'nome' => 'nome-due',
+                'cognome' => 'cognome-due',
+                'numero' => 'numero-due',
+            ],
+
+        ]
     ];
     return view('welcome', $data);
 });

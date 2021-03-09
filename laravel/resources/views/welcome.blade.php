@@ -8,13 +8,17 @@
 </head>
 <body>
 
-    <h1>gioco dei numeri</h1>
+    <h1>lista di invitati</h1>
 
     
 
-    @if ($numeroScelto %2 == 0)
-        <p>il numero {{ $numeroScelto }} è pari</p>
-    @endif
+    @foreach ($invitati as $item)
+        <p>{{ $item['nome'] }}</p>
+        <p>{{ $item['cognome'] }}</p>
+        <p>{{ $item['numero'] }}</p>
+    @endforeach
+
+    
 
 
 
